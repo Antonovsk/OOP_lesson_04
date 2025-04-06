@@ -1,0 +1,1471 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: white;
+}
+
+
+/* Header Styles (Flexbox Container) */
+.header_1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5px;
+}
+
+/* Styles for main content blocks inside the header */
+.header_1 > div {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Title */
+.title {
+    padding: 0;
+    margin-right: 69px;
+    text-decoration: none;
+}
+
+
+/* Header Links */
+.header__link {
+    font-family: "Europa";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    color: white;
+    margin-right: 1em;
+    color: inherit;
+}
+
+.fon {
+    overflow: hidden;  /* Clip any content that overflows */
+}
+  
+.fon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Blog homepage/Rectangle 1312 titel.png");
+    background-size: cover; /* Or contain, or whatever you need */
+    background-position: center;
+    z-index: -1; /* Place the background behind the content */
+}
+
+.title_2 {
+
+}
+
+
+
+/* Content styling */
+.content {
+    display: grid;
+    grid-template-columns:  auto;
+}
+
+.item {
+    border: 1pm solid #000;
+    height: 200px;
+}
+
+/* Mobile Styles */
+.mobile-header {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    /* Mobile header specific styles */
+    .header_1 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .title {
+        margin: 0 auto;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .logo_basket {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Hide items for mobile header */
+    .search-container,
+    .header__link,
+    .logo,
+    .logo_basement,
+    .basket_mobile,
+    .vk,
+    #query,
+    .search-container .icon {
+        display: none;
+    }
+}
+
+/* Styles for Desktop Screens (300px padding) */
+@media (min-width: 1441px) { /* Targeting desktops larger than MacBook screens */
+    .desktop-header .header_1 {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+/* Styles for MacBook Screens (30px padding) */
+@media (max-width: 1440px) and (min-width: 768px) {
+    .desktop-header .header_1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header_1 {
+        flex-wrap: wrap;
+    }
+
+    #query {
+        width: 300px;
+    }
+}
+
+/* Акция */
+
+/* General Styles (Already in your CSS, but included for completeness) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Content Styles (Desktop and MacBook) */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Left Side Styles (Desktop and MacBook) */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.sale {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 4em;
+    font-style: normal;
+    color: #000;
+    padding: 0;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.text {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: auto;
+    padding: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 3em;
+    font-size: 1em;
+}
+
+
+.text_button {
+    font-family: "Sansita", serif;
+    font-weight: 700;
+    display: flex;         /* Add flex to control the content */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;    /* Center the items vertically */
+    width: 100%;             /* Make sure the content fills the button */
+    height: 100%;            /* Make sure the content fills the button */
+    text-decoration: none; /* Remove link underline */
+    color: white;             /* Change to make readable */
+    font-size: 16px;          /* Set the base font size */
+}
+
+
+/* Style to highlight the price */
+.price-highlight {
+    font-size: 20px;       /* The important change for you here */
+  }
+
+/* Right Side Styles (Desktop and MacBook) */
+.right-side {
+    width: 50%;
+}
+
+.banner {
+    text-align: left;
+    margin-top: 3em;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Desktop Styles with 300px spacing */
+@media (min-width: 1441px) {
+    .container1 {
+        padding: 0 300px; /* Left and right padding */
+    }
+}
+
+/* MacBook Styles with 30px spacing */
+@media (max-width: 1440px) and (min-width: 768px) {
+    .container1 {
+        padding: 0 30px; /* Left and right padding */
+    }
+}
+
+/* Mobile Styles */
+.mobile-sale {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .container1 {
+        display: none;
+    }
+
+    .mobile-sale {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-sale .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    /* Target EVERYTHING inside content and center it */
+    .mobile-sale .content * {
+        width: 100% !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Ensure correct order */
+    .mobile-sale .sale {
+        order: 1; /* "АКЦИЯ" first */
+        margin-top: 0em;
+    }
+
+    .mobile-sale .banner {
+        order: 2; /* Banner second */
+        margin-top: 0em;
+    }
+
+    .mobile-sale .banner img {
+        display: block;
+        margin: 0 auto !important;
+    }
+
+    .mobile-sale .text {
+        order: 3;  /* Text third */
+    }
+
+    .mobile-sale .button1 {
+        order: 4; /* Button last */
+        margin: 1em auto;
+    }
+
+    
+}
+/* Existing CSS (Keep it) */
+
+
+/* логотипчики */
+
+/* General styles for logo_1*/
+.logo_1 {
+    display: flex;                     /* Use Flexbox */
+    justify-content: center;            /* Center items horizontally */
+    align-items: center;               /* Vertically center the items */
+    padding: 20px;                      /* Add some space */
+    color: #828282;
+    margin-top: 1em;
+    margin-top: 70px;
+}
+
+/* Figure styles */
+.logo_1 figure {
+    display: flex;
+    flex-direction: column;           /* stack them vertically */
+    align-items: center;            /* Center items horizontally */
+    margin-right: 100px;              /* Add spacing between each figure (logo + text) */
+    text-align: center;                 /* Center text */
+}
+
+/*Remove right margin from the last element*/
+.logo_1 figure:last-child{
+    margin-right: 0;
+}
+
+.logo_1 figure a{
+    display: block; /*The a tag is taking the entire space*/
+}
+
+/*Logo image*/
+.logo_1 figure img {
+    filter: grayscale(100%) brightness(60%) sepia(10%) hue-rotate(0deg) saturate(5%) invert(10%);
+}
+
+/* Text below the logo */
+.logo_1 figcaption {
+    font-size: 1em;                    /* Adjust size as needed */
+    margin-top: 5px;                    /* Add spacing between logo and text */
+}
+
+@media (max-width: 767px) {
+    .logo_1 {
+        display: none;                 /* Place to the right */
+    }
+ }
+
+
+
+/*категории товаров*/
+
+/* General Styles (These apply to both desktop and mobile unless overridden) */
+.title_h2 {
+    margin-top: 0.5em;
+    margin-bottom: 1ex;
+    margin-right: 300px;
+}
+
+.title_h3 {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0.5em;
+    margin-bottom: 1ex;
+}
+
+
+.desktop-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 395px);
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 32px;
+    padding: 0 300px; /* Add padding for desktop */
+}
+
+.h2 figure {
+    width: 395px; /* Keep the original width */
+}
+
+/* General Styles (These apply to both desktop and mobile unless overridden) */
+.mobile-slider {
+    display: none;  /* Hide slider by default */
+}
+
+
+/* General Styles */
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 550px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.fly-in-image {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    right: -700px;
+    width: 700px;
+    animation: flyIn 2s forwards;
+    margin-right: 300px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+/* Fly-in animation */
+@keyframes flyIn {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+/* Desktop Styles with 300px spacing */
+@media (min-width: 1441px) {
+    .title_h2 {
+        padding: 0 300px; /* Left and right padding */
+    }
+}
+
+/* MacBook Styles with 30px spacing */
+@media (max-width: 1440px) and (min-width: 768px) {
+    .title_h2 {
+        padding: 0 30px; /* Left and right padding */
+    }
+}
+
+@media (max-width: 767px) {
+    .title_h2 {
+        font-size: 32px;
+        text-align: center;
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .title_h2_text1 {
+        font-size: 14px;
+        text-align: center;
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .desktop-categories {
+        display: none; /* Hide the grid layout */
+    }
+
+    .mobile-slider {
+        display: flex; /* Show slider on mobile */
+        align-items: center; /* Vertically center slider and controls */
+    }
+
+    .category-slider-container {
+        position: relative;
+        display: flex; /* Position controls to the sides */
+        align-items: center;
+        justify-content: space-between; /* Distribute space evenly */
+        width: 100%;
+        padding: 0 10px; /* Add some padding */
+        box-sizing: border-box;
+    }
+
+    .category-slider {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        gap: 16px;
+        padding-bottom: 16px;
+        -webkit-overflow-scrolling: touch;
+        flex-grow: 1; /* Allow the slider to take up the remaining space */
+        margin-left: 1em;
+    }
+
+    .rrr {
+        margin-right: 1em;
+    }
+
+    .category-slider figure {
+        flex: 0 0 auto;
+        width: calc(48% - 8px); /* Show two items, accounting for gap */
+        scroll-snap-align: start;
+        box-sizing: border-box;
+    }
+
+    .category-slider img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .slider-controls {
+        position: static; /* Remove absolute positioning */
+        width: auto;
+        display: block;   /* Stack vertically */
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .slider-button1 {
+        background-color: #000;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 8px;
+        margin: 5px 0px;
+        cursor: pointer;
+        margin-bottom: 12em;
+    }
+
+    .slider-button1:hover {
+        background-color: #43a149;
+        color: black; /* Change text color to black */
+    }
+}
+
+/* сервиз*/
+
+/* General Styles */
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 550px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.fly-in-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -700px;
+    width: 700px;
+    animation: flyIn 2s forwards;
+    border-radius: 8px 0px 0px 8px;
+}
+
+/* Fly-in animation */
+@keyframes flyIn {
+    from {
+        right: -300px;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+.service {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    /* Removed margin-left: 1em; */
+    /* Removed margin-top: 1em; */
+    margin-top: 150px;
+}
+
+.service-text {
+    /* Add some styling to the text section */
+    width: 50%; /* Adjust as needed */
+}
+
+.service-image {
+    width: 50%; /* Adjust as needed */
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .service {
+        display: none; /* Hide on mobile */
+    }
+
+    .mobile-serviz {
+        display: flex; /* Display the mobile section */
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        text-align: center;
+    }
+
+    .mobile-serviz .container {
+        width: 100%; /* Full width for the container */
+    }
+
+    .mobile-serviz .fly-in-image {
+        position: relative;
+        transform: none;
+        right: -300px;
+        width: -300px;
+        max-width: 400px; /* Adjust as needed */
+        margin: 20px 0px;
+        animation: flyIn 2s forwards; /* Disable the animation */
+    }
+
+    @keyframes flyIn {
+        from {
+            right: -600px; /* Adjust this value */
+        }
+
+        to {
+            right: 0px;
+        }
+    }
+
+    .title_h2_text1 {
+        font-size: 20px;
+        text-align: center;
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+
+    .mobile-serviz h1 {
+        font-size: 10em; /* Adjust as needed */
+    }
+
+    .mobile-serviz h2,
+    .mobile-serviz h3,
+    .mobile-serviz h4 {
+        text-align: center; /* Or center, depending on what looks best */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .mobile-serviz .button1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Larger Desktop Styles (including MacBook) */
+@media (min-width: 1440px) {
+    .service {
+        max-width: 100%;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        min-height: 550px;
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .fly-in-image {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-100%);
+        right: -700px; /* Adjust this value */
+        width: -700px;
+        animation: flyIn 2s forwards;
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    @keyframes flyIn {
+        from {
+            right: -2000px; /* Adjust this value */
+        }
+
+        to {
+            right: -270px;
+        }
+    }
+
+    .txt_serviz {
+        margin-left: 30px;
+        width: 37%;
+    }
+
+
+    /* MacBook Styles (override the general desktop styles) */
+    @media (min-width: 1441px) {
+        .service {
+            /* Removed margin-left: auto; */ /* Removed centering */
+            /* Removed margin-right: auto; */
+            /* Removed padding-left: 30px; */ /* Removed padding */
+            /* Removed padding-right: 30px; */
+        }
+        
+        
+        .txt_serviz {
+            margin-left: 300px;
+            width: 31%;
+        }
+
+        @keyframes flyIn {
+            from {
+                right: -1000px; /* Adjust this value */
+            }
+    
+            to {
+                right: 0px;
+            }
+        }
+    }
+}
+
+/* Default is to hide mobile content on desktop */
+@media (min-width: 768px) {
+    .mobile-serviz {
+        display: none;
+    }
+}
+
+/* отзывы */
+/* General Styles (for non-mobile) - Keep these as simple as possible */
+.Reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    margin: 1em;  /* Keep a basic margin */
+}
+
+.review-slider {
+    display: flex;
+    align-items: center;
+    width: 100%;               /* Take full width */
+    margin: auto;        /* Center the slider */
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;      /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Make it snap to each item */
+    width: 100%;
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.review {
+    flex: 0 0 33.3333%; /* Set the width to 33.3333% */
+    height: auto; /* REMOVED fixed height */
+    scroll-snap-align: start; /* Snap to the start of the item */
+    padding: 20px;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    margin-right: 10px; /* Spacing between reviews */
+    box-sizing: border-box;   /* Include padding and border in element's total width and height */
+}
+
+.review:last-child {
+    margin-right: 0;          /* Remove margin from the last review */
+}
+
+.review-slider-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: 1em;
+}
+
+.review-slider-button:hover {
+    background-color: #43a149;
+    color: black;
+}
+
+.review-prev-button {
+    /*left: 300px; REMOVED specific positioning */
+}
+
+.review-next-button {
+    /*right: 300px; REMOVED specific positioning*/
+}
+
+.author {
+    font-style: italic;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.button2 {
+    background-color: black;
+    color: white;
+    width: auto; /* REMOVED fixed width */
+    height: auto; /* REMOVED fixed height */
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.button2:hover {
+    background-color: #43a149;
+    color: black; /* Change text color to black */
+}
+
+.reviews-header {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.reviews-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.title_h4 {
+    display: flex;
+    align-items: flex-start;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* стиль для мобильной версии для отзывов */
+@media (max-width: 767px) {
+    .Reviews {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .review-slider {
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        display: flex; /*ADDED:  Ensure it's a flex container */
+    }
+
+    
+    .review:last-child {
+        margin-right: 0;          /* Remove margin from the last review */
+    }
+    
+
+    .review-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+        padding: 10px;
+        scroll-behavior: smooth;
+        /*overflow: hidden;   REMOVED: This might be hiding the content */
+        margin-right: 0.1em; /* Reset margins */
+        margin-left:1.4em;  /* Reset margins */
+    }
+
+    .review {
+        flex: 0 0 100%; /* Ensure each review takes full width */
+        width: 100%;
+        height: auto;
+        scroll-snap-align: start;
+        padding: 20px;
+        border: 1px solid #828282;
+        border-radius: 5px;
+        margin-right: 1.5em;
+        box-sizing: border-box;
+    }
+
+    .review-slider-button {
+        background-color: #000;
+        color: white;
+        border: none;
+        padding: 5px 7px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 9px;
+        cursor: pointer;
+        position: absolute;
+        transform: translateY(-50%);
+        z-index: 1;
+        border-radius: 0;
+    }
+
+    .review-slider-button:hover {
+        background-color: #43a149;
+        color: black;
+    }
+
+    .review-prev-button {
+        left: 5px;
+    }
+
+    .review-next-button {
+        right: 5px;
+    }
+
+    .reviews-footer {
+        justify-content: center;
+    }
+
+    .button2 {
+        background-color: black;
+        color: white;
+        width: auto;
+        padding: 0.5em 1em;
+        border: none;
+        cursor: pointer;
+        margin-top: 1em;
+        font-size: 1em;
+        height: 35px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button2:hover {
+        background-color: #43a149;
+        color: black;
+    }
+
+   .title_h4 {
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-size: 48px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-left: 5px;
+    }
+
+    
+}
+
+@media (min-width: 1440px) {
+    .review-prev-button {
+        left: 30px;
+    }
+    
+    .review-next-button {
+        right: 30px;
+    }
+
+    .review-container {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;      /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Make it snap to each item */
+        width: 100%;
+        padding: 10px;
+        scroll-behavior: smooth; /* Smooth scrolling */
+        overflow: hidden;  /* Hide the scrollbar */
+        margin-right: 65px;
+        margin-left: 50px;
+    }
+
+    .Reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start (left) */
+        
+        margin-left: 1em;
+        margin-left: 30px;
+        margin-right: 1em;
+        /*margin-right: 300px;*/
+        margin-top: 1em;
+        margin-top: 150px;
+    }
+
+    .button2 {
+        background-color: black;
+        color: white;
+        width: 300px; /* Adjust to match the image */
+        height: auto;
+        padding: 0.5em 1em;  /* Added padding to match */
+        border: none;
+        cursor: pointer;
+        margin-top: 1em; /* Adjust to match the image */
+        font-size: 1em;  /* Added font size */
+        height: 35px;  /* Set height to 35px */
+        /*margin-right: 300px;*/
+        margin-right: 30px;
+    }
+
+
+    /* MacBook Styles (override the general desktop styles) */
+    @media (min-width: 1441px) {
+        .Reviews {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start (left) */
+            
+            margin-left: 1em;
+            margin-left: 300px;
+            margin-right: 1em;
+            /*margin-right: 300px;*/
+            margin-top: 1em;
+            margin-top: 150px;
+        }
+
+        .review-container {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;      /* Enable horizontal scrolling */
+            scroll-snap-type: x mandatory; /* Make it snap to each item */
+            width: 100%;
+            padding: 10px;
+            scroll-behavior: smooth; /* Smooth scrolling */
+            overflow: hidden;  /* Hide the scrollbar */
+            margin-right: 335px;
+            margin-left: 50px;
+        }
+
+        .review-prev-button {
+            left: 300px;
+        }
+        
+        .review-next-button {
+            right: 300px;
+        }
+
+        .button2 {
+            background-color: black;
+            color: white;
+            width: 300px; /* Adjust to match the image */
+            height: auto;
+            padding: 0.5em 1em;  /* Added padding to match */
+            border: none;
+            cursor: pointer;
+            margin-top: 1em; /* Adjust to match the image */
+            font-size: 1em;  /* Added font size */
+            height: 35px;  /* Set height to 35px */
+            /*margin-right: 300px;*/
+            margin-right: 300px;
+        }
+        
+        .button2:hover {
+            background-color: #43a149;
+            color: black; /* Change text color to black */
+        }
+    }
+}
+
+    /* форма заполения для отзыво */
+
+#review-form-popup {
+    display: none;
+    position: fixed;  /* Fixed positioning for the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1100;  /* Make sure it's on top of everything */
+}
+
+.review-form-content {
+    position: absolute; /* Absolute positioning within the popup */
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%); /* Center the content */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    left: 400px; /* Distance from the left */
+    font-size: 20px;
+    cursor: pointer;
+    color: #888; /* Or any color you prefer */
+}
+
+.button_form {
+    background-color: black;
+    color: white;
+    width: 200px; /* Adjust to match the image */
+    height: auto;
+    padding: 0.5em 1em;  /* Added padding to match */
+    border: none;
+    cursor: pointer;
+    margin-top: 1em; /* Adjust to match the image */
+    font-size: 1em;  /* Added font size */
+    width: 300px; /* Set width to 300px */
+    height: 35px;  /* Set height to 35px */
+    
+}
+
+.button_form:hover {
+    background-color: #43a149;
+    color: black; /* Change text color to black */
+}
+
+.text_form_title {
+    font-family: "Inter", serif;;
+    font-optical-sizing: auto;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1.5ex;
+}
+
+.text_form {
+    font-family: "Inter", serif;;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 1.5ex;
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (min-width: 1440px) {
+    .close-button {
+        position: absolute;
+        top: 10px; /* Distance from the top */
+        left: 430px; /* Distance from the left */
+        font-size: 20px;
+        cursor: pointer;
+        color: #888; /* Or any color you prefer */
+    }
+
+    
+    /* MacBook Styles (override the general desktop styles) */
+    @media (min-width: 1441px) {
+        
+    }
+}
+
+/* контакты */
+
+.Contacts {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    margin-left: 300px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.text_Contacts {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1.5ex;
+}
+
+.map {
+    margin-left: 200px;
+    margin-right: 300px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .Contacts {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;     /* Center items horizontally */
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 100px;      /*Adjust as needed*/
+        margin-bottom: 20px;   /*Adjust as needed*/
+    }
+
+    .text_Contacts {
+        text-align: center;       /* Center the "Контакты" title */
+        font-size: 36px;          /* Adjust font size for mobile */
+        margin-bottom: 1em;
+    }
+
+    .Contacts div {           /* Styles for address, phone, schedule */
+        text-align: center;
+        margin-bottom: 1em;      /* Space between sections */
+    }
+
+    .map {
+        margin-left: 5px;         /* Adjust map margins */
+        margin-right: 5px;
+        width: 100%;
+                
+    }
+
+    .map iframe {
+        width: 100%;             /* Make iframe full width */
+        height: 300px;           /* Adjust map height */
+    }
+}
+/* версия для macov */
+@media (min-width: 1440px) {
+    .Contacts {
+        padding: 0px;
+        margin-left: 30px;
+    }
+
+    .text_Contacts {
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-size: 48px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .map {
+        margin-left: 300px;
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1441px) {
+
+    .Contacts {
+        padding: 0px;
+        margin-left: 300px;
+    }
+
+    .text_Contacts {
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-size: 48px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .map {
+        margin-right: 300px;
+    }
+}
+
+/* подвал */
+
+/* Universal styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body is at least viewport height */
+}
+
+/* Set flex-grow for main, but do not use auto for its overflow */
+main {
+    flex: 1; /* Allow main content to grow and push the footer down */
+    /* overflow: auto;  REMOVE THIS*/
+}
+
+/* Main CSS (Default Styles) */
+.Basement {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #43a149;
+    padding-top: 20px;
+    width: 100%;
+    margin-top: auto; /* Push to bottom */
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.left-section a {
+    margin-bottom: 10px;
+}
+
+.mid-section {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.logo_basement {
+    display: flex;
+    gap: 0px;
+    margin-top: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.title_Basement {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #000;
+    padding: 0;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+.tel,
+.mail {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding-top: 5px;
+    color: #000;
+}
+
+.t__link {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.2;
+    color: #000;
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+/*Correct Main css*/
+
+@media (max-width: 767px) {
+    .Basement {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left-section {
+        display: flex; /* Ensure it's a flex container */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;   /* Center items horizontally within */
+    }
+
+    .title_Basement {
+        order: 0;
+    }
+
+    .logo_basement {
+        display: flex;
+        justify-content: center;
+        order: 1;
+        padding-right: 1em;
+    }
+
+    .tel {
+        order: 2;
+        font-size: 0.9em;
+        padding-right: 2em;
+    }
+
+    .mail {
+        order: 3;
+        font-size: 0.9em;
+        padding-right: 1.5em;
+    }
+
+    .mid-section-wrapper {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .left-section{
+        margin-left: 30px;
+    }
+
+    .column {
+        margin-left: 60px;
+    }
+
+    .mid-section-wrapper {
+        margin-left: auto;
+        margin-right: 30px;
+        padding-left: 30px;
+        padding-right: end;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (min-width: 1441px) {
+    .Basement {
+       display: flex;
+        width: 100%;
+    }
+    .mid-section-wrapper {
+        margin-left: auto;
+        margin-right: 0px;
+        padding-left: 300px;
+        padding-right: 200px;
+        box-sizing: border-box;
+    }
+
+    .column {
+        margin-right: 90px;
+    }
+
+    .left-section{
+        margin-left: 285px;
+    }
+     .mid-section{
+      justify-content: end;
+    }
+}
